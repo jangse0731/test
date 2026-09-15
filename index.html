@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="기업의 질문을 이해하고 실행까지 연결하는 AI 챗봇, SongSong-G를 소개합니다.">
+  <meta name="theme-color" content="#08111f">
+  <title>SongSong-G | 비즈니스를 이해하는 AI 챗봇</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2308111f'/%3E%3Cpath d='M18 20h28v18H33l-9 8v-8h-6z' fill='%2358f5c3'/%3E%3Ccircle cx='26' cy='29' r='2.5' fill='%2308111f'/%3E%3Ccircle cx='38' cy='29' r='2.5' fill='%2308111f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="brand" href="#top" aria-label="SongSong-G 홈">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+        <span>SongSong<span>-G</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">메뉴 열기</span><i></i><i></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#product">제품 소개</a>
+        <a href="#features">핵심 기능</a>
+        <a href="#process">도입 과정</a>
+        <a class="nav-cta" href="#contact">도입 문의</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> BUSINESS AI, MADE HUMAN</p>
+          <h1>질문은 대화로,<br><em>대화는 성과로.</em></h1>
+          <p class="hero-lead">SongSong-G는 고객과 구성원의 질문을 정확히 이해하고, 필요한 정보와 다음 행동을 자연스럽게 연결하는 기업용 AI 챗봇입니다.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo">데모 체험하기 <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="#product">SongSong-G 알아보기</a>
+          </div>
+          <ul class="trust-list" aria-label="서비스 주요 특징">
+            <li><span>01</span> 빠른 구축</li>
+            <li><span>02</span> 쉬운 연동</li>
+            <li><span>03</span> 안전한 운영</li>
+          </ul>
+        </div>
+
+        <div class="demo-shell" id="demo" aria-label="SongSong-G 대화 데모">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="chat-window">
+            <div class="chat-header">
+              <div class="bot-avatar"><span></span></div>
+              <div><strong>SongSong-G</strong><small><i></i> 지금 대화 가능</small></div>
+              <button type="button" class="more-button" aria-label="더보기">•••</button>
+            </div>
+            <div class="chat-body" id="chat-body" aria-live="polite">
+              <div class="message bot">
+                <span class="tiny-avatar">S</span>
+                <p>안녕하세요! 오늘 어떤 업무를 도와드릴까요?</p>
+              </div>
+              <div class="message user"><p>지난달 고객 문의를 요약해줘.</p></div>
+              <div class="message bot result-message">
+                <span class="tiny-avatar">S</span>
+                <div>
+                  <p>문의 내용을 3가지 핵심 주제로 정리했어요.</p>
+                  <ul>
+                    <li><b>46%</b><span>배송 및 일정</span></li>
+                    <li><b>32%</b><span>제품 사용법</span></li>
+                    <li><b>22%</b><span>결제 및 환불</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <form class="chat-input" id="chat-form">
+              <label class="sr-only" for="message-input">메시지 입력</label>
+              <input id="message-input" type="text" autocomplete="off" placeholder="SongSong-G에게 물어보세요" maxlength="80">
+              <button type="submit" aria-label="메시지 보내기">↑</button>
+            </form>
+            <p class="demo-note">예시 데모입니다. 입력한 내용은 저장되지 않습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="SongSong-G 적용 영역">
+      <div class="marquee">
+        <span>고객 상담</span><i>✦</i><span>사내 지식 검색</span><i>✦</i><span>업무 자동화</span><i>✦</i><span>데이터 인사이트</span><i>✦</i><span>고객 상담</span><i>✦</i><span>사내 지식 검색</span>
+      </div>
+    </section>
+
+    <section class="section product" id="product">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> WHY SONGSONG-G</p>
+          <h2>찾는 시간을 줄이고,<br>결정의 속도를 높입니다.</h2>
+          <p>흩어진 정보를 하나의 대화 창으로 모아 고객에게는 빠른 답을, 구성원에게는 더 나은 업무 흐름을 제공합니다.</p>
+        </div>
+        <div class="outcome-grid">
+          <article class="outcome-card reveal">
+            <span class="card-number">01</span>
+            <div class="line-icon" aria-hidden="true">⌁</div>
+            <h3>맥락을 이해하는 대화</h3>
+            <p>앞선 질문과 업무 맥락을 이어 받아 반복 설명 없이 자연스러운 대화를 완성합니다.</p>
+          </article>
+          <article class="outcome-card featured reveal">
+            <span class="card-number">02</span>
+            <div class="line-icon" aria-hidden="true">⌘</div>
+            <h3>회사 지식과 정확한 연결</h3>
+            <p>문서, 정책, 제품 정보를 바탕으로 필요한 답을 찾고 출처까지 투명하게 보여줍니다.</p>
+          </article>
+          <article class="outcome-card reveal">
+            <span class="card-number">03</span>
+            <div class="line-icon" aria-hidden="true">↗</div>
+            <h3>답변에서 실행까지</h3>
+            <p>단순 안내를 넘어 예약, 접수, 조회 등 다음 업무를 끊김 없이 연결합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-heading stories-heading reveal">
+          <p class="eyebrow"><span></span> SONGSONG-G IN ACTION</p>
+          <h2 id="stories-title">일상 속 더 좋은 대화가<br>업무의 변화를 만듭니다.</h2>
+          <p>고객을 응대하는 순간부터 팀의 지식을 찾는 순간까지, SongSong-G는 사람과 정보 사이의 거리를 줄입니다.</p>
+        </div>
+        <div class="story-grid">
+          <figure class="story-card story-card-large reveal">
+            <div class="story-image">
+              <img src="images/customer-support.png" alt="사무실에서 SongSong-G를 활용해 고객 문의를 처리하는 상담 담당자" loading="lazy" width="1536" height="1024">
+            </div>
+            <figcaption><span>01 / CUSTOMER SUPPORT</span><h3>상담은 더 정확하게</h3><p>필요한 답을 빠르게 찾아 고객에게 집중합니다.</p></figcaption>
+          </figure>
+          <figure class="story-card reveal">
+            <div class="story-image">
+              <img src="images/small-business-owner.png" alt="카페에서 스마트폰으로 SongSong-G를 이용하는 소상공인 고객" loading="lazy" width="1536" height="1024">
+            </div>
+            <figcaption><span>02 / EVERYDAY CUSTOMER</span><h3>고객은 기다림 없이</h3><p>필요한 순간, 익숙한 방식으로 바로 질문합니다.</p></figcaption>
+          </figure>
+          <figure class="story-card reveal">
+            <div class="story-image">
+              <img src="images/team-knowledge.png" alt="SongSong-G로 사내 지식을 확인하며 협업하는 팀" loading="lazy" width="1536" height="1024">
+            </div>
+            <figcaption><span>03 / TEAM KNOWLEDGE</span><h3>팀의 지식은 끊김 없이</h3><p>흩어진 경험을 모두가 활용할 수 있는 답으로 연결합니다.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="container feature-layout">
+        <div class="feature-intro reveal">
+          <p class="eyebrow light"><span></span> BUILT FOR REAL WORK</p>
+          <h2>우리 회사에 맞게<br>배우고, 연결하고,<br><em>함께 성장합니다.</em></h2>
+          <p>복잡한 기술은 SongSong-G가 맡고, 팀은 더 중요한 일에 집중하세요.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-row reveal">
+            <span>01</span><div><h3>맞춤형 AI 학습</h3><p>기업의 용어와 서비스 정책을 반영해 브랜드다운 답변을 제공합니다.</p></div><i>＋</i>
+          </article>
+          <article class="feature-row reveal">
+            <span>02</span><div><h3>유연한 시스템 연동</h3><p>웹사이트, 메신저, 업무 도구와 연결해 기존 흐름을 유지합니다.</p></div><i>＋</i>
+          </article>
+          <article class="feature-row reveal">
+            <span>03</span><div><h3>대화 데이터 분석</h3><p>반복되는 질문과 고객의 목소리를 한눈에 파악해 개선점을 발견합니다.</p></div><i>＋</i>
+          </article>
+          <article class="feature-row reveal">
+            <span>04</span><div><h3>안전한 권한 관리</h3><p>사용자와 정보별 접근 범위를 나누어 중요한 데이터를 보호합니다.</p></div><i>＋</i>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow"><span></span> SIMPLE START</p>
+          <h2>도입은 가볍게,<br>변화는 분명하게.</h2>
+        </div>
+        <ol class="process-list">
+          <li class="reveal"><b>1주차</b><span>Discover</span><h3>업무 발견</h3><p>반복 질문과 핵심 사용 장면을 함께 찾습니다.</p></li>
+          <li class="reveal"><b>2주차</b><span>Build</span><h3>맞춤 구축</h3><p>필요한 지식과 시스템을 안전하게 연결합니다.</p></li>
+          <li class="reveal"><b>3주차</b><span>Launch</span><h3>검증과 시작</h3><p>실제 대화로 품질을 확인하고 운영을 시작합니다.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container cta-inner reveal">
+        <div>
+          <p class="eyebrow light"><span></span> LET'S TALK</p>
+          <h2>당신의 비즈니스에<br>더 좋은 대화를.</h2>
+        </div>
+        <div class="cta-copy">
+          <p>SongSong-G가 가장 먼저 해결할 질문은 무엇인가요?<br>우리 팀과 함께 가능성을 확인해 보세요.</p>
+          <a class="button bright" href="mailto:hello@songsong-g.ai">도입 문의하기 <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>SongSong<span>-G</span></span></a>
+      <p>사람과 비즈니스를 연결하는 대화형 AI</p>
+      <p>© <span id="year"></span> SongSong-G. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
